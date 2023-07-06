@@ -35,7 +35,6 @@ body {
 
 h1, h2, h3 {
 	font-family: 'greenos', sans-serif;
-	height: fit-content;
 }
 
 h1{
@@ -51,6 +50,23 @@ h2{
 h3{
 	font-weight: 500;
 	font-size: 5rem;
+}
+
+@media screen and (min-width:1024px) {
+	body{
+		font-size: 1.8rem;
+	}
+	h1{
+		font-size: 8rem;
+	}
+
+	h2{
+		font-size: 5rem;
+	}
+	h3{
+		font-size: 4rem;
+	}
+
 }
 
 /* icons */
@@ -130,6 +146,17 @@ a:hover{
 	padding: 0; 
 }
 
+/* grids */
+
+.grid{
+	display: grid;
+}
+
+@media screen and (min-width:768px) {
+	.grid--1x2{
+		grid-template-columns: repeat(2,1fr);
+	}
+}
 
 /* blocks */
 
