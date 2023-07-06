@@ -17,6 +17,18 @@ h1, h2, h3 {
 	font-family: 'Karla', sans-serif;
 }
 
+h1{
+	font-weight: 800;
+}
+
+h2{
+	font-weight: 600;
+}
+
+h3{
+	font-weight: 500;
+}
+
 /* lists */
 
 .list{
@@ -27,9 +39,17 @@ h1, h2, h3 {
 }
 
 
+/* collapsibles */
+
+
 
 /* navigation */
 
 .nav-bar{
 	background-color: #282828;
+}
+
+.list{
+	margin: 0;
+	padding: 0; 
 }
