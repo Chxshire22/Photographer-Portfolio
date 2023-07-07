@@ -137,8 +137,6 @@ a:hover {
 /* buttons */
 
 .btn {
-  margin-top: 1rem;
-
   outline: 0;
   border-radius: var(--border-radius);
   border: 0;
@@ -183,12 +181,11 @@ a:hover {
   padding: 1rem 3rem;
 }
 
-.btn .icon{
-	width: 4rem;
-	vertical-align: middle;
-	margin-right: 2rem;
+.btn .icon {
+  width: 4rem;
+  vertical-align: middle;
+  margin-right: 2rem;
 }
-
 
 /* collapsibles */
 
@@ -214,6 +211,10 @@ a:hover {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
+	.grid--1xindefinite{
+		grid-template-columns: repeat(auto, 1fr);
+		gap: 2rem;
+	}
 }
 
 /* blocks */
@@ -304,3 +305,48 @@ a:hover {
     transform: translateY(0);
   }
 }
+
+/* cards */
+
+.card {
+  /* border: 2px solid #274b4d; */
+  padding: 2rem;
+  border-radius: var(--border-radius);
+	max-width: 700px;
+	transition: transform 0.15s;
+	box-shadow: 0 0 20px 5px var(--color-hover-blue) ;
+}
+
+.card__header {
+	width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+}
+
+.card__content {
+  width: fit-content;
+  min-height: 300px;
+  margin: 2rem auto;
+}
+
+.card__content > img {
+	object-fit: cover;
+  height: 100%;
+	width: 100%;
+}
+
+.card__footer-description{
+	font-size: 2rem;
+}
+
+.card:hover{
+	transform: scale(1.1);
+}
+
+@media screen and (min-width:1024px) {
+	.card__footer-description{
+		font-size: 1.8rem;
+	}
+}
+
