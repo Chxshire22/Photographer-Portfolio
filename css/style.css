@@ -139,13 +139,24 @@ a:hover{
 	outline: 0;
 	border-radius: var(--border-radius);
 	border: 0;
-	background-color: black;
-	padding: 0.5rem 2rem;
+	background-color: var(--color-body-dark);
+	padding: 1rem 2rem;
 	text-align: center;
 	text-transform: uppercase;
 	white-space: nowrap;
 	width: 100%;
 	text-decoration: none;
+	cursor: pointer;
+}
+
+.btn--secondary{
+	background: black;
+	color: var(--color-body-dark);
+}
+
+.btn--small{
+	width: fit-content;
+	padding: 1rem 3rem;
 }
 
 /* collapsibles */
