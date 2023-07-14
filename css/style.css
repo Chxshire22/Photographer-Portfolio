@@ -124,8 +124,8 @@ a:hover {
 
 /* lists */
 
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
 
 .list {
@@ -191,7 +191,7 @@ li{
   margin-right: 2rem;
 }
 
-/* collapsibles */ 
+/* collapsibles */
 
 /* TODO: input collapsibles info here */
 
@@ -213,7 +213,7 @@ li{
   justify-items: center;
 }
 
-.grid--1xindefinite-row{
+.grid--1xindefinite-row {
   grid-template-rows: repeat(auto, 1fr);
   gap: 1.6rem;
 }
@@ -390,7 +390,6 @@ li{
 .card:hover {
   cursor: pointer;
 }
-
 
 @media screen and (min-width: 768px) {
   .card__header > h3 {
@@ -590,14 +589,17 @@ li{
 }
 
 /* carousel */
-.carousel-wrapper{
+.carousel-wrapper {
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: center;
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
 }
 
-.carousel-wrapper .icon-container{
+.carousel-wrapper .icon-container {
   z-index: 3;
   position: absolute;
   height: 4rem;
@@ -605,12 +607,12 @@ li{
   transition: background 0.15s;
 }
 
-.carousel-wrapper .icon-container:hover{
+.carousel-wrapper .icon-container:hover {
   background: var(--color-hover-body-dark);
   cursor: pointer;
 }
 
-.carousel{
+.carousel {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -619,24 +621,66 @@ li{
   height: 100%;
 }
 
-.carousel{
+.carousel {
   width: fit-content;
 }
 
-.carousel .card {
+/* .carousel .card {
   width: 100%;
   height: 100%;
-}
+} */
 
-.carousel .carousel__card:not(:first-of-type) {
+.carousel__card {
   display: none;
 }
 
-.carousel-wrapper .icon-container:first-of-type{
+.carousel .carousel__card.active {
+  display: block;
+}
+
+.carousel-wrapper .icon-container:first-of-type {
   top: 45%;
   left: 6%;
 }
-.carousel-wrapper .icon-container:last-of-type{
+.carousel-wrapper .icon-container:last-of-type {
   top: 45%;
   right: 6%;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }

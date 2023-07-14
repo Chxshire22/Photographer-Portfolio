@@ -37,5 +37,3 @@ const notClickModalContent = (event) => {
 
 // event listener if not click modal content
 window.addEventListener("click", notClickModalContent);
-
-
