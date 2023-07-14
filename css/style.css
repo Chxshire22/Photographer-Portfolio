@@ -588,7 +588,8 @@ li {
   opacity: 1;
 }
 
-/* carousel */
+/* CAROUSEL */
+
 .carousel-wrapper {
   display: flex;
   flex-direction: row;
@@ -684,3 +685,4 @@ li {
     opacity: 1;
   }
 }
+
