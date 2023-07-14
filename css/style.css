@@ -595,8 +595,10 @@ li {
   flex-direction: row;
   align-content: center;
   justify-content: center;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   position: relative;
+  width: 100%;
+  height: 100% ;
   margin: auto;
 }
 
@@ -686,3 +688,29 @@ li {
   }
 }
 
+/* about profile */
+
+.about__profileimg{
+  height: 40rem;
+  width: 40rem;
+  /* overflow: hidden; */
+}
+
+.profile-photo{
+    object-fit: cover;
+    object-position: left top;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.about__content .nav-icons { 
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding-top: 5rem;
+}
+
+.nav-icons .icon{
+  cursor: pointer;
+}
