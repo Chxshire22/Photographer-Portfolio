@@ -292,6 +292,10 @@ li {
   .block__header .hero--heading {
     font-size: 15rem;
   }
+  .hero__image > img {
+	  height: 800px;
+	  object-fit: cover;
+  }
 }
 
 .hero .scroll-prompt {
