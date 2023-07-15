@@ -24,6 +24,7 @@
 html {
   font-size: 62.5%;
   margin: 0;
+  scroll-behavior: smooth;
 }
 body {
   background: #282828;
@@ -213,25 +214,20 @@ li {
   justify-items: center;
 }
 
-.grid--1xindefinite-row {
-  grid-template-rows: repeat(auto, 1fr);
-  gap: 1.6rem;
-}
 
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .grid--1xindefinite-column {
-    grid-template-columns: repeat(auto, 1fr);
-    gap: 2rem;
   }
 }
 
 /* blocks */
 
 .container {
+  margin-top: 10vh;
   max-width: 1440px;
+  height: fit-content;
+  min-height: 100vh;
   margin: 0 auto;
 }
 
@@ -325,7 +321,7 @@ li {
   margin: 0 auto;
   border-radius: var(--border-radius);
   /* min-height: 100%; */
-  max-width: 80%;
+  /* max-width: 80%; */
   transition: transform 0.15s;
   /* box-shadow: 0 0 10px 0px var(--color-hover-body-dark); */
 }
@@ -598,7 +594,7 @@ li {
   /* max-width: 1200px; */
   position: relative;
   width: 100%;
-  height: 100% ;
+  /* height:  ; */
   margin: auto;
 }
 
@@ -704,6 +700,11 @@ li {
     border-radius: 100%;
 }
 
+.about__content{
+  height: 100%;
+  width: 100%;
+}
+
 .about__content .nav-icons { 
 display: flex;
 flex-direction: row;
@@ -714,3 +715,30 @@ padding-top: 5rem;
 .nav-icons .icon{
   cursor: pointer;
 }
+
+/* gear section */
+
+.gear{
+  margin-top: 40rem;
+}
+
+.gear__content{
+  gap: 4rem;
+}
+
+.gear-used{
+  width: 100%;
+  height: 50rem;
+  overflow: hidden;
+}
+
+.gear-used>img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .gear__content:nth-of-type(even) .gear-used {
+    order: 2;
+  }}
