@@ -219,6 +219,10 @@ li {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
+  .grid--1x3{
+	  grid-template-columns: repeat(3, 1fr);
+	  gap: 1rem;
+  }
 }
 
 /* blocks */
@@ -723,7 +727,7 @@ padding-top: 5rem;
 /* gear section */
 
 .gear{
-  margin-top: 40rem;
+  margin-top: 10rem;
 }
 
 .gear__content{
