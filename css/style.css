@@ -187,9 +187,9 @@ li {
 }
 
 .btn .icon {
-  width: 4rem;
+  width: 3rem;
   vertical-align: middle;
-  margin-right: 2rem;
+  margin-right: 0.5rem;
 }
 
 /* collapsibles */
